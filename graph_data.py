@@ -10,7 +10,7 @@ class GraphData:
         data_set_name = os.path.basename(path)
 
         # load edges
-        f = open(path + "/" + data_set_name + '_multiplex.edges')
+        f = open(path + "\\" + data_set_name + '_multiplex.edges')
         lines = f.readlines()
         f.close()
         edges = [[e[0], e[1], e[2], 1] for e in

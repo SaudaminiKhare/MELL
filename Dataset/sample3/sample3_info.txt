@@ -1,0 +1,5 @@
+L:6
+N:2564
+M:109276
+directed:False
+weighted:False

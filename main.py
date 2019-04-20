@@ -11,7 +11,7 @@ from graph_data import GraphData
 if __name__ == "__main__":
 
 
-    path = 'Dataset/sample1'
+    path = 'C:\\Users\\320052308\\MELL\\Dataset\\sample3'
     data = GraphData(path)
 
 
@@ -28,6 +28,7 @@ if __name__ == "__main__":
     model = MELL_model(data.L, data.N, data.directed, train_edges, 128, 4, 10, 1, 1)
     model.train(500)
 
+    model.save_embedding("C:\\Users\\320052308\\MELL")
     y_true = np.array(test_edges)[:, 3]
     y_predict = [ model.predict(t) for t in test_edges]
 

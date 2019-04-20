@@ -148,9 +148,9 @@ class MELL_model:
         
     def save_embedding(self, dir_path):
         # save embedding results to dir_path/***.npy
-        np.save(dir_path + '/VH.npy', self.resVH)
-        np.save(dir_path + '/VT.npy', self.resVT)
-        np.save(dir_path + '/R.npy', self.resR)
+        np.save(dir_path + '\\VH.npy', self.resVH)
+        np.save(dir_path + '\\VT.npy', self.resVT)
+        np.save(dir_path + '\\R.npy', self.resR)
 
     def load_embedding(self, dir_path):
         # load embedding .npy file from dir_path/***.npy
